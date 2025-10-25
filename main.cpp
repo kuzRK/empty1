@@ -13,9 +13,12 @@ int main()
   u_t a = 0;
   u_t b = 0;
   u_t c = 0;
+  std::cin >> c >> b;
   size_t count = 0;
   while (std::cin >> a) {
     count += isPyth(a,b,c);
+    c = b;
+    b = a;
   }
 
   if (std::cin.eof()) {
