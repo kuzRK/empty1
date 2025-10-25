@@ -49,6 +49,18 @@ int main()
     c = b;
     b = a;
   }
+
+  bool i1 = oversquare(a);
+  bool i2 = oversquare(b);
+  bool i3 = oversquare(c);
+  bool osum1 = overplus(a*a, b*b);
+  bool osum2 = overplus(a*a, c*c);
+  bool osum3 = overplus(c*c, b*b);
+  if (i1 || i2 || i3 || osum1 || osum2 || osum3) {
+    std::cerr << "overflow err\n";
+    return 2;
+  }
+
   if (std::cin.eof()) {
     std::cout << count;
     std::cout << "\n";
