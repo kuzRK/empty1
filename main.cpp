@@ -11,7 +11,7 @@ unsigned max_u()
 bool oversquare(unsigned a)
 {
   unsigned res = 0;
-  if (a > max_u()/a) {
+  if (a > max_u() / a) {
     return true;
   }
   res = a * a;
@@ -33,7 +33,7 @@ bool isPyth(unsigned a, unsigned b, unsigned c)
   bool p = (b*b + c*c == a*a);
   p  = p || (a*a + c*c == b*b);
   p  = p || (b*b + a*a == c*c);
-  return   a;
+  return   p;
 }
 
 int main()
