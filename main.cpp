@@ -2,9 +2,9 @@
 
 bool isPyth( unsigned a, unsigned b, unsigned c)
 {
-  bool a = (b*b + c*c == a*a);
-  a  = a || (a*a + c*c == b*b);
-  a  = a || (b*b + a*a == c*c);
+  bool p = (b*b + c*c == a*a);
+  p  = p || (a*a + c*c == b*b);
+  p  = p || (b*b + a*a == c*c);
   return   a;
 }
 int main()
